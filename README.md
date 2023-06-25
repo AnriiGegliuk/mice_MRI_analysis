@@ -13,7 +13,7 @@ However, after processing our data, the following brain masks are generated (we 
 
 This project is focused on processing and analyzing 3D brain images of rodents, specifically mice, in the Neuroimaging Informatics Technology Initiative (NIfTI) format. The central task involves applying affine transformations to align these brain images with a standard anatomical space, which is essential for subsequent comparison and analysis.
 
-![image](https://github.com/AnriiGegliuk/mice_MRI_analysis/assets/120349975/de072b8c-b99d-4084-9121-2810c8da53e3)
+![image](https://github.com/AnriiGegliuk/mice_MRI_analysis/assets/120349975/812500ad-9ccc-48a5-b2b1-29b6d5f53306)
 
 The processing pipeline is built using Python, and specifically leverages the nibabel library for handling NIfTI images, and numpy for numerical operations. 
 
