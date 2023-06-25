@@ -5,7 +5,7 @@ Skull stripping is a key pre-processing technique in neuroimaging, aiming to rem
 ![image](https://github.com/AnriiGegliuk/mice_MRI_analysis/assets/120349975/f3c74929-f38d-4250-99c8-67a66e3a60d9)
 
 
-However, after processing our data, the following brain masks are generated (we are using MRIcrone to open raw and mask image):
+However, after processing our data, the following brain masks are generated (we are using [MRIcron](https://people.cas.sc.edu/rorden/mricron/index.HTML) to open raw and mask .NIFTY files):
 
 ![image](https://github.com/AnriiGegliuk/mice_MRI_analysis/assets/120349975/5912e6bf-99c7-4e37-a3bc-8dd6087bd009)
 
