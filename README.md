@@ -5,7 +5,7 @@ Skull stripping is a key pre-processing technique in neuroimaging, aiming to rem
 ![image](https://github.com/AnriiGegliuk/mice_MRI_analysis/assets/120349975/f3c74929-f38d-4250-99c8-67a66e3a60d9)
 
 
-However, after processing our data, the following brain masks are generated (we are using [MRIcron](https://people.cas.sc.edu/rorden/mricron/index.HTML) to open raw and mask .NIFTY files):
+However, after processing our data, the following brain masks are generated (we are using [MRIcron](https://people.cas.sc.edu/rorden/mricron/index.HTML) to open raw and mask .NIfTI images):
 
 ![image](https://github.com/AnriiGegliuk/mice_MRI_analysis/assets/120349975/5912e6bf-99c7-4e37-a3bc-8dd6087bd009)
 
@@ -14,5 +14,9 @@ However, after processing our data, the following brain masks are generated (we 
 This project is focused on processing and analyzing 3D brain images of rodents, specifically mice, in the Neuroimaging Informatics Technology Initiative (NIfTI) format. The central task involves applying affine transformations to align these brain images with a standard anatomical space, which is essential for subsequent comparison and analysis.
 
 ![image](https://github.com/AnriiGegliuk/mice_MRI_analysis/assets/120349975/de072b8c-b99d-4084-9121-2810c8da53e3)
+
+The processing pipeline is built using Python, and specifically leverages the nibabel library for handling NIfTI images, and numpy for numerical operations. 
+
+It consists of loading raw brain images and corresponding mask images, applying appropriate transformations, and saving the updated masks. Moreover, the project provides utilities for visualizing the 3D brain structures, using libraries such as nilearn and itkwidgets, which are valuable for quality control and exploration.
 
 
