@@ -41,4 +41,4 @@ for raw_file in raw_files:
     new_mask_filepath = os.path.join(new_mask_dir, os.path.splitext(raw_file)[0] + '_mask.nii')
     update_header_and_save(raw_filepath, mask_filepath, new_mask_filepath)
 
-print('\n**********\t', 'New masks generated', '\t**********\n')
+print('\n**********\t', 'New masks generated & saved', '\t**********\n')
