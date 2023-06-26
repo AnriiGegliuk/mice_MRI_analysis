@@ -1,5 +1,8 @@
 *.nii
 *.csv
-raw_data/
+data/
+new_data/
+new_data_2506/
+new_data_cv2/
 .DS_Store
 .python-version
