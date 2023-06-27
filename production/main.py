@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import nibabel as nib
+import cv2 as cv
 import os
 
 # path to directory
@@ -16,6 +17,24 @@ raw_files = os.listdir(raw_dir)
 def update_header_and_save(raw_filepath, mask_filepath, new_mask_filepath):
     raw_img = nib.load(raw_filepath)
     mask_img = nib.load(mask_filepath)
+
+    mask_data = mask_img.get_fdata()
+
+   # slicing 3D img and filling missing parts
+    for i in range(mask_data.shape[2]):
+
+       
+        slice_img = mask_data[:, :, i]
+
+        
+        slice_img_8bit = cv.normalize(slice_img, None, 0, 255, cv.NORM_MINMAX).astype('uint8')
+
+       
+        kernel = np.ones((5, 5), np.uint8)
+        closing = cv.morphologyEx(slice_img_8bit, cv.MORPH_CLOSE, kernel)
+
+        
+        mask_data[:, :, i] = closing
 
     # values to update
     attributes = ['extents', 'dim_info', 'slice_end', 'cal_max', 'cal_min', 
