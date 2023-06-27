@@ -3,8 +3,6 @@ import numpy as np
 import nibabel as nib
 import os
 
-
-
 # path to directory
 data_dir = '/home/sharapova/test/new_data_2506'
 
