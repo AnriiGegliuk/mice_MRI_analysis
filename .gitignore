@@ -1,6 +1,7 @@
 *.nii
 *.csv
 data/
+data_testing/
 new_data/
 new_data_2506/
 new_data_cv2/
