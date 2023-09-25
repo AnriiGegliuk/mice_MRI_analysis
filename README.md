@@ -1,6 +1,6 @@
 # MRI Analysis project
 
-Skull stripping is a key pre-processing technique in neuroimaging, aiming to remove non-brain structures like the skull, skin, muscles, and fat from brain images. Its goal is to isolate and focus on the brain, the primary structure of interest, enhancing data analysis by minimizing noise and bias from non-brain components. For this purpose, we are using and adapting to our needs [BEN's project](https://github.com/AnriiGegliuk/BEN_project).
+Skull stripping is a key pre-processing technique in neuroimaging, aiming to remove non-brain structures like the skull, skin, muscles, and fat from brain images. Its goal is to isolate and focus on the brain, the primary structure of interest, enhancing data analysis by minimizing noise and bias from non-brain components. For this purpose, we are using and adapting to our needs [BEN's project](https://github.com/AnriiGegliuk/BEN_project) and part of it used [here.](https://github.com/AnriiGegliuk/BEN_project/blob/main/utils/new_mask.py)
 
 ![image](https://github.com/AnriiGegliuk/mice_MRI_analysis/assets/120349975/f3c74929-f38d-4250-99c8-67a66e3a60d9)
 
