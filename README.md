@@ -17,6 +17,6 @@ This project is focused on processing and analyzing 3D brain images of rodents, 
 
 The processing pipeline is built using **Python**, and specifically leverages the nibabel library for handling **NIfTI** images, and numpy for numerical operations. 
 
-It consists of loading raw brain images and corresponding mask images, applying appropriate **transformations**, and saving the updated masks. Moreover, the project provides utilities for visualizing the 3D brain structures, using libraries such as nilearn and itkwidgets, which are valuable for quality control and exploration.
+It consists of loading raw brain images and corresponding mask images, applying appropriate **transformations**, and saving the updated masks.
 
 
